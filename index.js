@@ -3,7 +3,7 @@
    * Contact Me on wa.me/6288292024190
    * Follow https://github.com/DikaArdnt
 */
-
+process.on('uncaughtException', console.error)
 require('./config')
 const { default: hisokaConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
