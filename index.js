@@ -185,7 +185,7 @@ async function startHisoka() {
         return status
     }
 	
-    hisoka.public = false
+    hisoka.public = true
 
     hisoka.serializeM = (m) => smsg(hisoka, m, store)
 
